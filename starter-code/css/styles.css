@@ -1,0 +1,22 @@
+
+:root{
+    --negro: #0B0D17;
+    --moradito: #D0D6F9;
+    --blanco: #FFFFFF;
+}
+
+.background-destination {
+    background: url("../assets/destination/background-destination-desktop.jpg");
+    height: 2000px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FFFFFF;
+}
+
+.background-technology {
+
+}
+
+.background-crew {
+    
+}
