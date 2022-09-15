@@ -1,14 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,800&display=swap');
 :root{
     --negro: #0B0D17;
     --moradito: #D0D6F9;
     --blanco: #FFFFFF;
+    --gris: #28292b;
 }
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* DESTINATION */
 
 .background-destination {
     background: url("../assets/destination/background-destination-desktop.jpg");
-    height: 2000px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #FFFFFF;
+    color: var(--blanco);
+}
+
+.titulo{
+    margin: 10rem 10rem 0 ;
+    font-weight: 400;
+    
+}
+.titulo span{
+    color: var(--gris);
+    font-weight: bold;
+}
+.contenido__destino img{
+    margin: 6rem 15rem;
+    max-width: 26%;
 }
