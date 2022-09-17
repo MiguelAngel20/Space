@@ -33,6 +33,56 @@ body{
     font-weight: bold;
 }
 .contenido__destino img{
-    margin: 6rem 15rem;
-    max-width: 26%;
+    margin: 9rem 15rem;
+}
+
+.contenedor{
+    display: flex;
+}
+
+.contenedorMain{
+    margin-top: 20rem;
+}
+.contenedorMain__nav a{
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 500;
+    margin-right: 4rem;
+    text-transform: uppercase;
+}
+.contenedorMain h1{
+    font-size: 10rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    /* border: 1px solid; */
+
+}
+.contenedorMain__parrafo{
+    line-height: 2;
+    width: 75%;
+    /* margin-top: 5rem; */
+    /* border: 1px solid; */
+}
+.contenedorMain__linea{
+    width: 75%;
+    height: .1rem;
+    background-color: var(--gris);
+    border: none;
+    margin-left: 0;
+}
+.contenedorMain_info{
+    display: flex;
+    margin: 3rem 0;
+}
+.contenedorMain_info--dat{
+    display: flex;
+    flex-direction: row;
+}
+.info{
+    font-size: 3rem;
+    font-weight: 400;
+}
+.espacio{
+    margin-left: 5rem;
 }
