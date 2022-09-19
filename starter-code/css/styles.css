@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@font-face {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/Bellefair-Regular.otf');
+}
 :root{
     --negro: #0B0D17;
     --moradito: #D0D6F9;
@@ -14,6 +21,75 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+}
+
+/** HOME */
+.background-home {
+    background-image: url('../assets/home/background-home-desktop.jpg');
+    background-position: top 0px left 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+iframe {
+    width: 100%;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+#menu .logo {
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+}
+
+#menu .logo img {
+    display: block;
+    margin: 0px auto;
+    margin-top: 30px;
+}
+
+#menu ul {
+    background-color: rgba(67, 67, 67, 0.509);
+    backdrop-filter: blur(3px);
+    width: 50%;
+    height: 70px;
+}
+
+#menu ul li {
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 2.4rem;
+    color: var(--blanco);
+    font-size: 16px;
+    letter-spacing: 2px;
+    
+}
+
+#menu ul li a {
+    text-decoration: none;
+}
+
+#menu ul li a:visited {
+    color: #fff;
+}
+
+#menu ul .active{
+    border-bottom: 2px solid #fff;
+}
+
+.line {
+    width: 500px;
+    height: 0.1px;
+    background-color: grey;
+    margin-top: 52px;
+    margin-left: 160px;
+    position: absolute;
+    z-index: 1;
 }
 
 /* DESTINATION */
@@ -85,4 +161,11 @@ body{
 }
 .espacio{
     margin-left: 5rem;
+}
+
+/** TECHNOLOGY */
+.background-technology {
+    background: url("../assets/technology/background-technology-desktop.jpg");
+    background-position: top 0px left 0px;
+    background-repeat: no-repeat;
 }
