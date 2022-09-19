@@ -1,37 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+<body id="body">
 
-  01 Pick your destination
 
-  Moon
-  Mars
-  Europa
-  Titan
+    00 Home
+    01 Destination
+    02 Crew
+    03 Technology
 
-  Moon
+    <div class="contenedor">
+      <div class="contenido__destino">
+        <h2 class="titulo"><span>01</span> Pick your destination</h2>
+        <img src="assets/destination/image-moon.png" alt="moon">
+      </div>
+      
+      <main class="contenedorMain">
+        <nav class="contenedorMain__nav">
+          <a href="#">Moon</a>
+          <a href="#">Mars</a>
+          <a href="#">Europa</a>
+          <a href="#">Titan</a>
+        </nav>
+        <h1>Moon</h1>
+        <div class="contenedorMain__parrafo">
+          <p>
+            See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+            regain perspective and come back refreshed. While you’re there, take in some history
+            by visiting the Luna 2 and Apollo 11 landing sites.
+          </p>
+        </div>
+        <hr class="contenedorMain__linea">
+        <section class="contenedorMain_info">
+          <div>
+            Avg. distance
+            <div class="info">384,400 km</div>
+          </div>
+          <div class="espacio">
+            Est. travel time
+            <div class="info">3 days</div>
+          </div>
+        </section>
+      </main>
+    </div>
 
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
+  <script type="text/javascript" src="js/main.js"></script>
 
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days
 </body>
+
 </html>
