@@ -29,5 +29,3 @@ switch (ruta) {
         document.querySelector('.menu_technology').classList.add('active');
         break;
 }
-
-localStorage.setItem('ruta', ruta);
