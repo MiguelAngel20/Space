@@ -5,7 +5,7 @@ const body = document.querySelector('body');
 const home = '/starter-code/index.html';
 const destination = '/starter-code/destination-moon.html';
 const crew = '/starter-code/crew';
-const technology = '/starter-code/technology.html';
+const technology = '/starter-code/technology-vehicle.html';
 
 switch (ruta) {
     case '/starter-code/':
