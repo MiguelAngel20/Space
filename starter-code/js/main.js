@@ -4,7 +4,10 @@ const body = document.querySelector('body');
 
 const home = '/starter-code/index.html';
 const destination = '/starter-code/destination-moon.html';
-const crew = '/starter-code/crew';
+const crew = '/starter-code/crew-commander.html';
+const crew1 = '/starter-code/crew-specialist.html';
+const crew2 = '/starter-code/crew-engineer.html';
+const crew3 = '/starter-code/crew-pilor.html';
 const technology = '/starter-code/technology.html';
 
 switch (ruta) {
@@ -21,6 +24,18 @@ switch (ruta) {
         document.querySelector('.menu_destination').classList.add('active');
         break;
     case crew:
+        body.classList.add('background-crew');
+        document.querySelector('.menu_crew').classList.add('active');
+        break;
+    case crew1:
+        body.classList.add('background-crew');
+        document.querySelector('.menu_crew').classList.add('active');
+        break;
+    case crew2:
+        body.classList.add('background-crew');
+        document.querySelector('.menu_crew').classList.add('active');
+        break;
+    case crew3:
         body.classList.add('background-crew');
         document.querySelector('.menu_crew').classList.add('active');
         break;
