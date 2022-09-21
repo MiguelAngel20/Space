@@ -147,8 +147,10 @@ iframe {
     margin: 4rem 10rem 0 ;
     font-weight: 400;
     font-size: 3.5rem;
+    text-transform: uppercase;
     
 }
+
 .titulo span{
     color: var(--gris);
     font-weight: bold;
@@ -159,11 +161,7 @@ iframe {
 
 .contenedor{
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center;
-    gap: 10rem; */
 }
-
 .contenedorMain{
     margin-top: 5rem;
     /* border: 1px solid; */
@@ -195,7 +193,7 @@ iframe {
     height: .1rem;
     background-color: var(--gris);
     border: none;
-    /* margin: 6rem 0 0 0; */
+    margin: 6rem 0 0 0;
 }
 .contenedorMain_info{
     display: flex;
@@ -208,9 +206,60 @@ iframe {
 .info{
     font-size: 3rem;
     font-weight: 400;
+    margin: 1rem;
 }
 .espacio{
     margin-left: 5rem;
+}
+@media (max-width: 768px) {
+    .background-destination {
+        background: url("../assets/destination/background-destination-tablet.jpg");
+        color: var(--blanco);
+        background-attachment: fixed;
+    }
+    .titulo{
+        margin: 4rem 0 0 3rem ;
+        font-weight: 400;
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        
+    }
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenido__destino {
+        display: flex;
+        justify-content: center;
+    }
+    .contenido__destino img{
+        margin: 5rem;
+    }
+    .contenedorMain{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedorMain h1{
+        /* margin-top: 3rem;
+        margin-bottom: 0; */
+        margin: 3rem 0 0 0;
+        /* border: 1px solid; */
+    
+    }
+    .contenedorMain__parrafo{
+        line-height: 2;
+        width: 75%;
+        margin-top: 0;
+        text-align: center;
+    }
+    .contenedorMain_info{
+        display: flex;
+        margin: 3rem 0;
+        column-gap: 10rem;
+        
+    }
 }
 
 /** TECHNOLOGY */
