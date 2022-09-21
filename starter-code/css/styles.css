@@ -29,9 +29,7 @@ body{
     background-position: top 0px left 0px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-iframe {
-    width: 100%;
+    background-size: cover;
 }
 
 #menu {
@@ -142,6 +140,10 @@ iframe {
 .background-destination {
     background: url("../assets/destination/background-destination-desktop.jpg");
     color: var(--blanco);
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .titulo{
@@ -214,6 +216,7 @@ iframe {
     background-position: top 0px left 0px;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .title {
@@ -239,7 +242,6 @@ iframe {
 }
 
 #technologies .technology .pages {
-    /* background-color: red; */
     width: 10%;
     height: inherit;
     font-family: 'Bellefair';
@@ -262,10 +264,10 @@ iframe {
 #technologies .active {
     background-color: var(--blanco) !important;
     color: var(--negro) !important;
+    transition: all 700ms;
 }
 
 #technologies .technology .pages ul li {
-    /* background-color: var(--blanco); */
     width: 75px;
     height: 75px;
     border-radius: 50%;
@@ -274,6 +276,7 @@ iframe {
     font-size: 25px;
     color: var(--blanco);
     border: 1px solid var(--gris);
+    cursor: pointer;
 }
 
 #technologies .technology .tech-info {
