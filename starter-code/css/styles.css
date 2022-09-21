@@ -20,19 +20,28 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Bellefair';
+<<<<<<< HEAD
 }
 
 /** HOME */
 .background-home {
     background-image: url('../assets/home/background-home-desktop.jpg');
+=======
+    background-image: url('../assets/crew/background-crew-desktop.jpg');
+>>>>>>> Crew
     background-position: top 0px left 0px;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+<<<<<<< HEAD
 iframe {
     width: 100%;
 }
 
+=======
+
+/** Menu */
+>>>>>>> Crew
 #menu {
     display: flex;
     justify-content: space-between;
@@ -81,6 +90,7 @@ iframe {
     border-bottom: 2px solid #fff;
 }
 
+<<<<<<< HEAD
 .line {
     width: 500px;
     height: 0.1px;
@@ -373,3 +383,14 @@ iframe {
 #technologies .technology .technology-image img {
     width: 100%;
 }
+=======
+/** Contenido */
+.contenedor{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+}
+
+
+
+>>>>>>> Crew
