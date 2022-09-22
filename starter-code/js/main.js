@@ -4,7 +4,7 @@ const body = document.querySelector('body');
 
 const home = '/starter-code/index.html';
 const destination = '/starter-code/destination-moon.html';
-const crew = '/starter-code/crew';
+const crew = '/starter-code/crew1.html';
 const technology = '/starter-code/technology.html';
 
 switch (ruta) {

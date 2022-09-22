@@ -328,6 +328,14 @@ body{
 
 
 /** CREW */
+.background-crew {
+    background: url("../assets/crew/background-crew-desktop.jpg");
+    background-position: top 0px left 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 /** Contenido */
 .contenedor{
     width: 1100px;
@@ -338,11 +346,4 @@ body{
 .title span {
     color: var(--gris);
     font-weight: bold;
-}
-
-#technologies .technology {
-    display: flex;
-    width: 90%;
-    height: 290px;
-    float: right;
 }
