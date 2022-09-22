@@ -94,7 +94,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 20%;
-    margin-top: 170px;
+    margin-top: 130px;
 }
 
 #content-home .article {
@@ -102,11 +102,34 @@ body{
     color: #fff;
 }
 
-#content-home .explore { 
+#content-home .explore {
+    margin-top: -40px;
+}
+
+#content-home .hover-explore { 
+    width: 410px;
+    height: 410px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms;
+}
+
+#content-home .hover-explore:hover {
+    background-color: rgb(124 124 124 / 32%);
+}
+
+#content-home .text-explore:hover {
+    cursor: pointer;
+}
+
+#content-home .explore .text-explore {
+    background-color: #fff;
     width: 274px;
     height: 274px;
     text-transform: uppercase;
-    background-color: #fff;
     font-family: 'Bellefair';
     border-radius: 50%;
     text-align: center;
@@ -119,6 +142,7 @@ body{
     text-transform: uppercase;
     font-size: 28px;
     letter-spacing: 2px;
+    color: var(--moradito);
 }
 
 #content-home .title {
@@ -130,10 +154,12 @@ body{
 }
 
 #content-home .description {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Condensed';
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 1.1px;
+    color: var(--moradito);
+    line-height: 21px;
 }
 
 /* DESTINATION */

@@ -1,31 +1,15 @@
-const ruta = window.location.pathname;
+const pages = ['destination', 'crew', 'technology'];
+const ruta = window.location.pathname.toLowerCase();
 
-const body = document.querySelector('body');
+pages.forEach(e => {
+    if (ruta.includes(e)) {
+        addBackground(e);
+    } else if (ruta === '/starter-code/' || ruta.includes('index')) {
+        addBackground('home');
+    }
+});
 
-const home = '/starter-code/index.html';
-const destination = '/starter-code/destination-moon.html';
-const crew = '/starter-code/crew1.html';
-const technology = '/starter-code/technology.html';
-
-switch (ruta) {
-    case '/starter-code/':
-        body.classList.add('background-home');
-        document.querySelector('.menu_home').classList.add('active');
-        break;
-    case home:
-        body.classList.add('background-home');
-        document.querySelector('.menu_home').classList.add('active');
-        break;
-    case destination:
-        body.classList.add('background-destination');
-        document.querySelector('.menu_destination').classList.add('active');
-        break;
-    case crew:
-        body.classList.add('background-crew');
-        document.querySelector('.menu_crew').classList.add('active');
-        break;
-    case technology:
-        body.classList.add('background-technology');
-        document.querySelector('.menu_technology').classList.add('active');
-        break;
+function addBackground(page) {
+    document.querySelector('body').classList.add('background-' + page);
+    document.querySelector('.menu_' + page).classList.add('active');
 }
