@@ -40,15 +40,14 @@ body{
 }
 
 #menu .logo {
-    width: 90px;
-    height: 90px;
-    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    margin-left: 35px;
+    margin-top: 20px;
 }
 
 #menu .logo img {
-    display: block;
-    margin: 0px auto;
-    margin-top: 30px;
+    width: inherit;
 }
 
 #menu ul {
@@ -90,6 +89,11 @@ body{
     position: absolute;
     z-index: 1;
 }
+
+#menu .menu-button {
+    display: none;
+}
+
 #content-home {
     display: flex;
     justify-content: center;

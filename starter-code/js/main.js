@@ -13,3 +13,10 @@ function addBackground(page) {
     document.querySelector('body').classList.add('background-' + page);
     document.querySelector('.menu_' + page).classList.add('active');
 }
+
+//** Menu button Click Event */
+const button = document.getElementById('buttonMenu');
+button.addEventListener('click', showMenu);
+
+function showMenu() {
+}
