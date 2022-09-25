@@ -21,6 +21,9 @@ body{
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
+a:visited {
+    color: #fff;
+}
 
 /** HOME */
 .background-home {
@@ -72,10 +75,6 @@ body{
     text-decoration: none;
 }
 
-#menu ul li a:visited {
-    color: #fff;
-}
-
 #menu ul .active{
     border-bottom: 2px solid #fff;
 }
@@ -92,6 +91,7 @@ body{
 
 #menu .menu-button {
     display: none;
+    z-index: 1;
 }
 
 #content-home {

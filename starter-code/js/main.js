@@ -15,8 +15,24 @@ function addBackground(page) {
 }
 
 //** Menu button Click Event */
-const button = document.getElementById('buttonMenu');
-button.addEventListener('click', showMenu);
+let isClose = false;
+const buttonMenu = document.getElementById('buttonMenu');
+const modal = document.getElementById('pre-modal');
+const toggleMenu = document.querySelector('#buttonMenu img');
+buttonMenu.addEventListener('click', showMenu);
 
 function showMenu() {
+
+    if (isClose) {
+        modal.style.display = 'none';
+        toggleMenu.src = 'assets/shared/icon-hamburger.svg';
+
+        isClose = false;
+    } else {
+        modal.style.display = 'block';
+        toggleMenu.src = 'assets/shared/icon-close.svg';
+
+        isClose = true;
+    }
+0
 }
