@@ -23,6 +23,10 @@
     list-style: none;
     text-transform: uppercase;
 }
+.modal .button-group ul li {
+    height: 35px;
+    line-height: 35px;
+}
 .modal .button-group ul li a {
     text-decoration: none;
     font-family: 'Barlow Condensed';
@@ -34,7 +38,7 @@
 
 
 @media (max-width: 768px) {
-    body {
+    #body-home {
         background-image: url('../assets/home/background-home-tablet.jpg') !important;
     }
 
@@ -95,9 +99,9 @@
 }
 
 
-@media (min-width: 375px) and (max-width: 425px) {
+@media (max-width: 425px) and (min-width: 375px) {
 
-    body {
+    #body-home {
         background-image: url('../assets/home/background-home-mobile.jpg') !important;
     }
 

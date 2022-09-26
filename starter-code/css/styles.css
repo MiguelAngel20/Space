@@ -20,22 +20,21 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    color: var(--blanco);
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 a:visited {
     color: #fff;
 }
 
-/** HOME */
-.background-home {
+/** Menu */
+#body-home {
     background-image: url('../assets/home/background-home-desktop.jpg');
-    background-position: top 0px left 0px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
-
-/** Menu */
 #menu {
     display: flex;
     justify-content: space-between;
@@ -76,7 +75,10 @@ a:visited {
 }
 
 #menu ul .active{
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--blanco);
+}
+#pre-modal .modal .button-group ul .active {
+    border-right: 3px solid var(--blanco);
 }
 
 .line {
@@ -139,6 +141,7 @@ a:visited {
     text-align: center;
     line-height: 274px;
     font-size: 32px;
+    color: var(--negro);
 }
 
 #content-home .span-home {
@@ -167,16 +170,9 @@ a:visited {
 }
 
 /* DESTINATION */
-
-.background-destination {
-    background: url("../assets/destination/background-destination-desktop.jpg");
-    color: var(--blanco);
-
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+#body-destination {
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
 }
-
 .titulo{
     margin: 10rem 10rem 0 ;
     font-weight: 400;
@@ -244,14 +240,9 @@ a:visited {
 }
 
 /** TECHNOLOGY */
-.background-technology {
-    background: url("../assets/technology/background-technology-desktop.jpg");
-    background-position: top 0px left 0px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+#body-technology {
+    background-image: url('../assets/technology/background-technology-desktop.jpg');
 }
-
 .title {
     font-family: 'Barlow Condensed';
     font-weight: 400;
@@ -292,6 +283,9 @@ a:visited {
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+#technologies .technology .pages ul li:hover {
+    border: 1px solid var(--moradito);
 }
 
 #technologies .active {

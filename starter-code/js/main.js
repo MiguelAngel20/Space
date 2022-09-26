@@ -1,25 +1,27 @@
 const pages = ['destination', 'crew', 'technology'];
 const ruta = window.location.pathname.toLowerCase();
 
-pages.forEach(e => {
-    if (ruta.includes(e)) {
-        addBackground(e);
+pages.forEach(page => {
+    if (ruta.includes(page)) {
+        addActive(page);
     } else if (ruta === '/starter-code/' || ruta.includes('index')) {
-        addBackground('home');
+        addActive('home');
     }
 });
 
-function addBackground(page) {
-    document.querySelector('body').classList.add('background-' + page);
+/** [Method] Add active to the menu */
+function addActive(page) {
     document.querySelector('.menu_' + page).classList.add('active');
+    document.querySelector('.modal .menu_' + page).classList.add('active');
 }
 
-//** Menu button Click Event */
+
+//** Menu button [Click Event] */
 let isClose = false;
-const buttonMenu = document.getElementById('buttonMenu');
 const modal = document.getElementById('pre-modal');
 const toggleMenu = document.querySelector('#buttonMenu img');
-buttonMenu.addEventListener('click', showMenu);
+
+document.getElementById('buttonMenu').addEventListener('click', showMenu);
 
 function showMenu() {
 
@@ -34,5 +36,4 @@ function showMenu() {
 
         isClose = true;
     }
-0
 }
