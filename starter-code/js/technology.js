@@ -1,6 +1,20 @@
+// Variables declaration
+const windowWidth = window.innerWidth;
+const isDesktop = 1440 >= windowWidth && windowWidth > 768;
 const button1 = document.querySelector('.buttonTech-1');
 const button2 = document.querySelector('.buttonTech-2');
 const button3 = document.querySelector('.buttonTech-3');
+const title = document.querySelector('.title-technology');
+const image = document.querySelector('.technology-image img');
+const description = document.querySelector('.technology-description');
+// End of variables declaration
+
+
+if (isDesktop) {
+    document.querySelector('.technology-image img').src = 'assets/technology/image-launch-vehicle-portrait.jpg';
+} else {
+    document.querySelector('.technology-image img').src = 'assets/technology/image-launch-vehicle-landscape.jpg';
+}
 
 button1.addEventListener('click', getData);
 button2.addEventListener('click', getData);
@@ -18,12 +32,8 @@ function getData() {
 }
 
 function showHTML(data) {
-    const title = document.querySelector('.title-technology');
-    const image = document.querySelector('.technology-image img');
-    const description = document.querySelector('.technology-description');
-
     title.innerHTML = data.name;
-    image.src = data.images.portrait;
+    isDesktop ? image.src = data.images.portrait : image.src = data.images.landscape;
     description.innerHTML = data.description;
 }
 
