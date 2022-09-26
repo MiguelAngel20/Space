@@ -26,18 +26,15 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-
-/** HOME */
-.background-home {
-    background-image: url('../assets/home/background-home-desktop.jpg');
-    background-position: top 0px left 0px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+a:visited {
+    color: #fff;
 }
 
-
 /** Menu */
+#body-home {
+    background-image: url('../assets/home/background-home-desktop.jpg');
+}
+
 #menu {
     display: flex;
     justify-content: space-between;
@@ -45,15 +42,14 @@ body{
 }
 
 #menu .logo {
-    width: 90px;
-    height: 90px;
-    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    margin-left: 35px;
+    margin-top: 20px;
 }
 
 #menu .logo img {
-    display: block;
-    margin: 0px auto;
-    margin-top: 30px;
+    width: inherit;
 }
 
 #menu ul {
@@ -78,12 +74,11 @@ body{
     text-decoration: none;
 }
 
-#menu ul li a:visited {
-    color: #fff;
-}
-
 #menu ul .active{
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--blanco);
+}
+#pre-modal .modal .button-group ul .active {
+    border-right: 3px solid var(--blanco);
 }
 
 .line {
@@ -95,11 +90,17 @@ body{
     position: absolute;
     z-index: 1;
 }
+
+#menu .menu-button {
+    display: none;
+    z-index: 1;
+}
+
 #content-home {
     display: flex;
     justify-content: center;
     gap: 20%;
-    margin-top: 170px;
+    margin-top: 130px;
 }
 
 #content-home .article {
@@ -107,16 +108,40 @@ body{
     color: #fff;
 }
 
-#content-home .explore { 
+#content-home .explore {
+    margin-top: -40px;
+}
+
+#content-home .hover-explore { 
+    width: 410px;
+    height: 410px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms;
+}
+
+#content-home .hover-explore:hover {
+    background-color: rgb(124 124 124 / 32%);
+}
+
+#content-home .text-explore:hover {
+    cursor: pointer;
+}
+
+#content-home .explore .text-explore {
+    background-color: #fff;
     width: 274px;
     height: 274px;
     text-transform: uppercase;
-    background-color: #fff;
     font-family: 'Bellefair';
     border-radius: 50%;
     text-align: center;
     line-height: 274px;
     font-size: 32px;
+    color: var(--negro);
 }
 
 #content-home .span-home {
@@ -124,6 +149,7 @@ body{
     text-transform: uppercase;
     font-size: 28px;
     letter-spacing: 2px;
+    color: var(--moradito);
 }
 
 #content-home .title {
@@ -135,23 +161,20 @@ body{
 }
 
 #content-home .description {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Condensed';
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 1.1px;
+    color: var(--moradito);
+    line-height: 21px;
 }
 
 /* DESTINATION */
 
 /** TECHNOLOGY */
-.background-technology {
-    background: url("../assets/technology/background-technology-desktop.jpg");
-    background-position: top 0px left 0px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+#body-technology {
+    background-image: url('../assets/technology/background-technology-desktop.jpg');
 }
-
 .title {
     font-family: 'Barlow Condensed';
     font-weight: 400;
@@ -192,6 +215,9 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+#technologies .technology .pages ul li:hover {
+    border: 1px solid var(--moradito);
 }
 
 #technologies .active {
