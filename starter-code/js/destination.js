@@ -8,10 +8,19 @@ let titanBtn = document.querySelector('#titan');
 let imagen = document.querySelector('#images');
 let titulo = document.querySelector('#name');
 let descripcion = document.querySelector('#description');
+let indexPlanet = 0;
 
-titulo.innerHTML = 
+moonBtn.addEventListener('click', showHTML);
+marsBtn.addEventListener('click', showHTML);
+titanBtn.addEventListener('click', showHTML);
+europaBtn.addEventListener('click', showHTML);
 
-moonBtn.addEventListener('click', ()=>{
-        
-});
-console.log(data);
+function showHTML() {
+    indexPlanet= data.destinations.findIndex(planet => 
+        planet.name.toLowerCase() === this.id
+    );
+
+    titulo.innerHTML = data.destinations[indexPlanet].name;
+    descripcion.innerHTML = data.destinations[indexPlanet].description;
+    imagen.src = data.destinations[indexPlanet].images.png;
+}
