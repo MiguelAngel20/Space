@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 @font-face {
     font-family: 'Bellefair';
     font-style: normal;
@@ -20,9 +20,8 @@ body{
     font-size: 16px;
     margin: 0;
     padding: 0;
-    font-family: 'Bellefair';
-    background-image: url('../assets/crew/background-crew-desktop.jpg');
-    background-position: center;
+    font-family: 'Bellefair', serif;
+    color: var(--blanco);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
