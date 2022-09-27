@@ -15,25 +15,24 @@ function addActive(page) {
     document.querySelector('.modal .menu_' + page).classList.add('active');
 }
 
-switch (ruta) {
-    case '/starter-code/':
-        body.classList.add('background-home');
-        document.querySelector('.menu_home').classList.add('active');
-        break;
-    case home:
-        body.classList.add('background-home');
-        document.querySelector('.menu_home').classList.add('active');
-        break;
-    case destination:
-        body.classList.add('background-destination');
-        document.querySelector('.menu_destination').classList.add('active');
-        break;
-    case crew:
-        body.classList.add('background-crew');
-        document.querySelector('.menu_crew').classList.add('active');
-        break;
-    case technology:
-        body.classList.add('background-technology');
-        document.querySelector('.menu_technology').classList.add('active');
-        break;
+//** Menu button [Click Event] */
+let isClose = false;
+const modal = document.getElementById('pre-modal');
+const toggleMenu = document.querySelector('#buttonMenu img');
+
+document.getElementById('buttonMenu').addEventListener('click', showMenu);
+
+function showMenu() {
+
+    if (isClose) {
+        modal.style.display = 'none';
+        toggleMenu.src = 'assets/shared/icon-hamburger.svg';
+
+        isClose = false;
+    } else {
+        modal.style.display = 'block';
+        toggleMenu.src = 'assets/shared/icon-close.svg';
+
+        isClose = true;
+    }
 }

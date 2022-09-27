@@ -1,10 +1,6 @@
 /** CREW */
-.background-crew {
-    background: url("../assets/crew/background-crew-desktop.jpg");
-    background-position: top 0px left 0px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+#body-crew {
+    background-image: url('../assets/crew/background-crew-desktop.jpg');
 }
 
 
