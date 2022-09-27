@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
 @font-face {
     font-family: 'Bellefair';
     font-style: normal;
@@ -25,6 +25,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    height: 100vh;
 }
 a, a:visited { 
     color: var(--blanco);

@@ -12,6 +12,8 @@
     font-size: 3.5rem;
     text-transform: uppercase;
     
+    font-family: 'Barlow Condensed';
+    letter-spacing: 2.5px;
 }
 
 .titulo span{
@@ -30,6 +32,11 @@
     font-weight: 500;
     margin-right: 4rem;
     text-transform: uppercase;
+
+    font-family: 'Barlow Condensed';
+    font-weight: 400;
+    color: #D0D6F9;
+    letter-spacing: 2px;
 }
 .active__destino{
     border-bottom: 1.5px solid var(--blanco);
@@ -45,6 +52,10 @@
 }
 .contenedorMain__parrafo{
     line-height: 2;
+    font-family: 'Barlow Condensed';
+    font-weight: 400;
+    color: #D0D6F9;
+    font-size: 20px;
 }
 .contenedorMain__linea{
     height: .1rem;
@@ -55,11 +66,18 @@
 .contenedorMain_info{
     display: flex;
     margin-top: 3rem;
+    font-family: 'Barlow Condensed';
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #D0D6F9;
 }
 .info{
     font-size: 3rem;
     font-weight: 400;
     margin-top: 1.5rem;
+
+    font-family: 'Bellefair';
+    color: #fff;;
 }
 .espacio{
     margin-left: 8rem;
