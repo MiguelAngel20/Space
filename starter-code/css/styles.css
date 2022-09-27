@@ -26,6 +26,9 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+a{ 
+    color: var(--blanco);
+}
 a:visited {
     color: #fff;
 }

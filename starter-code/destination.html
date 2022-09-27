@@ -37,21 +37,21 @@
   
   <div class="destino__contenedor">
     <div class="contenido__destino">
-      <img src="assets/destination/image-moon.png" alt="moon">
+      <img id="images" src="assets/destination/image-moon.png" alt="moon">
     </div>
 
     <main class="contenedorMain">
       <div class="nav__secundario">
         <nav class="contenedorMain__nav">
-          <a href="#">Moon</a>
-          <a href="#">Mars</a>
-          <a href="#">Europa</a>
-          <a href="#">Titan</a>
+          <a id="moon" href="#">Moon</a>
+          <a id="mars" href="#">Mars</a>
+          <a id="europa" href="#">Europa</a>
+          <a id="titan" href="#">Titan</a>
         </nav>
       </div>
-      <h1>Moon</h1>
+      <h1 id="name">Moon</h1>
       <div class="contenedorMain__parrafo">
-        <p>
+        <p id="description">
           See our planet as you’ve never seen it before. A perfect relaxing trip away to help
           regain perspective and come back refreshed. While you’re there, take in some history
           by visiting the Luna 2 and Apollo 11 landing sites.
@@ -61,11 +61,11 @@
       <section class="contenedorMain_info">
         <div>
           Avg. distance
-          <div class="info">384,400 km</div>
+          <div id="distance" class="info">384,400 km</div>
         </div>
         <div class="espacio">
           Est. travel time
-          <div class="info">3 days</div>
+          <div id="travel" class="info">3 days</div>
         </div>
       </section>
     </main>
@@ -85,7 +85,7 @@
     </div>
   </div>
   <!-- MODAL MENU [responsive=475px]-->
-
+  <script type="module" src="js/destination.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
 </body>

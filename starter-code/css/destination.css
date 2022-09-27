@@ -1,5 +1,9 @@
 #body-destination {
     background: url("../assets/destination/background-destination-desktop.jpg");
+    color: var(--blanco);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .titulo{
@@ -40,7 +44,6 @@
     line-height: 2;
 }
 .contenedorMain__linea{
-    width: 80%;
     height: .1rem;
     background-color: var(--gris);
     border: none;
@@ -63,11 +66,10 @@
 @media (max-width: 768px) {
     #body-destination {
         background: url("../assets/destination/background-destination-tablet.jpg");
-
         color: var(--blanco);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
     }
     .titulo{
         margin: 4rem 0 0 3rem ;
@@ -99,6 +101,13 @@
         width: 75%;
         margin-top: 0;
         text-align: center;
+    }
+    .contenedorMain__linea{
+        width: 80%;
+        height: .1rem;
+        background-color: var(--gris);
+        border: none;
+        margin-top: 6rem;
     }
     .contenedorMain_info{
         display: flex;
