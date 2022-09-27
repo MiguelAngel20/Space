@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/destination.css">
   <link rel="stylesheet" href="css/responsive-home.css">
-  <link rel="stylesheet" href="css/responsive-technology.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 
-<body id="body-home">
-
+<body id="body-destination">
   <nav id="menu">
     <div class="logo"><img src="assets/shared/logo.svg"></div>
 
@@ -31,25 +31,45 @@
 
   </nav>
 
-  <section id="content-home">
-
-    <article class="article">
-      <span class="span-home">So, you want to travel to</span>
-      <h2 class="title">Space</h2>
-      <p class="description">
-        Let’s face it; if you want to go to space, you might as well genuinely go to
-        outer space and not hover kind of on the edge of it. Well sit back, and relax
-        because we’ll give you a truly out of this world experience!
-      </p>
-    </article>
-
-    <div class="explore">
-      <div class="hover-explore">
-        <div class="text-explore">Explore</div>
-      </div>
+  <header>
+    <h2 class="titulo"><span>01</span> Pick your destination</h2>
+  </header>
+  
+  <div class="destino__contenedor">
+    <div class="contenido__destino">
+      <img id="images" src="assets/destination/image-moon.png" alt="moon">
     </div>
 
-  </section>
+    <main class="contenedorMain">
+      <div class="nav__secundario">
+        <nav class="contenedorMain__nav">
+          <a id="moon" href="#">Moon</a>
+          <a id="mars" href="#">Mars</a>
+          <a id="europa" href="#">Europa</a>
+          <a id="titan" href="#">Titan</a>
+        </nav>
+      </div>
+      <h1 id="name">Moon</h1>
+      <div class="contenedorMain__parrafo">
+        <p id="description">
+          See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+          regain perspective and come back refreshed. While you’re there, take in some history
+          by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
+      </div>
+      <hr class="contenedorMain__linea">
+      <section class="contenedorMain_info">
+        <div>
+          Avg. distance
+          <div id="distance" class="info">384,400 km</div>
+        </div>
+        <div class="espacio">
+          Est. travel time
+          <div id="travel" class="info">3 days</div>
+        </div>
+      </section>
+    </main>
+  </div>
 
   <!-- MODAL MENU [responsive=475px]-->
   <div id="pre-modal">
@@ -58,14 +78,14 @@
         <ul>
           <li class="menu_home"><a href="index.html"><b>00</b> Home</a></li>
           <li class="menu_destination"><a href="destination.html"><b>01</b> Destination</a></li>
-          <li class="menu_crew"><a href="./crew1.html"><b>02</b> Crew</a></li>
+          <li class="menu_crew"><a href=""><b>02</b> Crew</a></li>
           <li class="menu_technology"><a href="technology.html"><b>03</b> Technology</a></li>
         </ul>
       </div>
     </div>
   </div>
   <!-- MODAL MENU [responsive=475px]-->
-
+  <script type="module" src="js/destination.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
 </body>

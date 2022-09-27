@@ -20,18 +20,24 @@ body{
     font-size: 16px;
     margin: 0;
     padding: 0;
-    font-family: 'Bellefair';
-    background-image: url('../assets/crew/background-crew-desktop.jpg');
-    background-position: center;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--blanco);
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
 }
-
+a{ 
+    color: var(--blanco);
+}
+a:visited {
+    color: #fff;
+}
 
 /** Menu */
-.principal{
-    min-height: 100%;
+#body-home {
+    background-image: url('../assets/home/background-home-desktop.jpg');
 }
+
 #menu {
     display: flex;
     justify-content: space-between;
@@ -39,15 +45,14 @@ body{
 }
 
 #menu .logo {
-    width: 90px;
-    height: 90px;
-    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    margin-left: 35px;
+    margin-top: 20px;
 }
 
 #menu .logo img {
-    display: block;
-    margin: 0px auto;
-    margin-top: 30px;
+    width: inherit;
 }
 
 #menu ul {
@@ -72,12 +77,222 @@ body{
     text-decoration: none;
 }
 
-#menu ul li a:visited {
+#menu ul .active{
+    border-bottom: 2px solid var(--blanco);
+}
+#pre-modal .modal .button-group ul .active {
+    border-right: 3px solid var(--blanco);
+}
+
+.line {
+    width: 500px;
+    height: 0.1px;
+    background-color: grey;
+    margin-top: 52px;
+    margin-left: 160px;
+    position: absolute;
+    z-index: 1;
+}
+
+#menu .menu-button {
+    display: none;
+    z-index: 1;
+}
+
+#content-home {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    margin-top: 130px;
+}
+
+#content-home .article {
+    width: 30%;
     color: #fff;
 }
 
-#menu ul .active{
-    border-bottom: 2px solid #fff;
+#content-home .explore {
+    margin-top: -40px;
+}
+
+#content-home .hover-explore { 
+    width: 410px;
+    height: 410px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms;
+}
+
+#content-home .hover-explore:hover {
+    background-color: rgb(124 124 124 / 32%);
+}
+
+#content-home .text-explore:hover {
+    cursor: pointer;
+}
+
+#content-home .explore .text-explore {
+    background-color: #fff;
+    width: 274px;
+    height: 274px;
+    text-transform: uppercase;
+    font-family: 'Bellefair';
+    border-radius: 50%;
+    text-align: center;
+    line-height: 274px;
+    font-size: 32px;
+    color: var(--negro);
+}
+
+#content-home .span-home {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: var(--moradito);
+}
+
+#content-home .title {
+    font-family: 'Bellefair';
+    font-size: 130px;
+    text-transform: uppercase;
+    margin: 0px;
+    font-weight: 400;
+}
+
+#content-home .description {
+    font-family: 'Barlow Condensed';
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    color: var(--moradito);
+    line-height: 21px;
+}
+
+/* DESTINATION */
+
+/** TECHNOLOGY */
+#body-technology {
+    background-image: url('../assets/technology/background-technology-desktop.jpg');
+}
+.title {
+    font-family: 'Barlow Condensed';
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--blanco);
+    letter-spacing: 4.75px;
+    margin-left: 12%;
+    margin-bottom: 7%;
+}
+
+.title span {
+    color: var(--gris);
+    font-weight: bold;
+}
+
+#technologies .technology {
+    display: flex;
+    width: 90%;
+    height: 290px;
+    float: right;
+}
+
+#technologies .technology .pages {
+    width: 10%;
+    height: inherit;
+    font-family: 'Bellefair';
+    
+}
+
+#technologies .technology .pages ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#technologies .technology .pages ul li:hover {
+    border: 1px solid var(--moradito);
+}
+
+#technologies .active {
+    background-color: var(--blanco) !important;
+    color: var(--negro) !important;
+    transition: all 700ms;
+}
+
+#technologies .technology .pages ul li {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 75px;
+    font-size: 25px;
+    color: var(--blanco);
+    border: 1px solid var(--gris);
+    cursor: pointer;
+}
+
+#technologies .technology .tech-info {
+    width: 56%;
+    height: inherit;
+    box-sizing: border-box; 
+    padding: 27px 140px 32px 80px;
+    color: var(--blanco);
+}
+
+#technologies .technology .tech-info span {
+    font-family: 'Barlow Condensed';
+    text-transform: uppercase;
+    letter-spacing: 2.9px;
+    color: var(--moradito);
+}
+
+#technologies .technology .tech-info .title-technology {
+    font-family: 'Bellefair';
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+#technologies .technology .tech-info .technology-description {
+    font-family: 'Barlow Condensed';
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: var(--moradito);
+}
+
+#technologies .technology .technology-image { 
+    width: 30%;
+    position: absolute;
+    right: 0px;
+    top: 190px;
+}
+#technologies .technology .technology-image img {
+    width: 100%;
+}
+
+
+/** CREW */
+.background-crew {
+    background: url("../assets/crew/background-crew-desktop.jpg");
+    background-position: top 0px left 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /** Contenido */
@@ -91,76 +306,7 @@ img{
     display: flex;
 }
 
-.informacion{
-    width: 80%;
-    margin: 10px auto;
+.title span {
+    color: var(--gris);
+    font-weight: bold;
 }
-
-.meet{
-    display: flex;
-    align-items: center;
-}
-
-.meet__numero{
-    font-size: 2rem;
-    color: var(--moradito);
-}
-
-.meet__texto{
-    font-size: 2rem;
-    padding-left: 15px;
-    color: var(--blanco);
-}
-
-.descripcion{
-    margin-top: 55px;
-    width: 90%;
-}
-
-.descripcion__text{
-    font-size: 2rem;
-    color: var(--moradito);
-}
-
-.descripcion__titulo{
-    margin-top: 15px;
-    color: var(--blanco);
-    font-size: 3.6rem;
-}
-
-.descripcion__parrafo{
-    width: 400px;
-    color: var(--blanco);
-    font-size: 1.8rem;
-}
-
-.botones{
-    margin-top: 80px;
-}
-
-.boton{
-    width: 10px;
-    height: 10px;
-    margin-right: 20px;
-    border-radius: 100%;
-    background-color: var(--moradito);
-    opacity: 0.5;
-    cursor: pointer;
-}
-.activo{
-    background-color: #fff;
-    opacity: 1;
-}
-
-.imagen{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.imagen__nasa{
-    width: 100%;
-}
-
-
