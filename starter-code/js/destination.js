@@ -9,7 +9,7 @@ let imagen = document.querySelector('#images');
 let titulo = document.querySelector('#name');
 let descripcion = document.querySelector('#description');
 
-titulo.innerHTML = 
+titulo.innerHTML = data.
 
 moonBtn.addEventListener('click', ()=>{
         
