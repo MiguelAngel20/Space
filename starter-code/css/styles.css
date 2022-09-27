@@ -20,8 +20,9 @@ body{
     font-size: 16px;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    color: var(--blanco);
+    font-family: 'Bellefair';
+    background-image: url('../assets/crew/background-crew-desktop.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -33,11 +34,11 @@ a:visited {
     color: #fff;
 }
 
-/** Menu */
-#body-home {
-    background-image: url('../assets/home/background-home-desktop.jpg');
-}
 
+/** Menu */
+.principal{
+    min-height: 100%;
+}
 #menu {
     display: flex;
     justify-content: space-between;
@@ -306,7 +307,76 @@ img{
     display: flex;
 }
 
-.title span {
-    color: var(--gris);
-    font-weight: bold;
+.informacion{
+    width: 80%;
+    margin: 10px auto;
 }
+
+.meet{
+    display: flex;
+    align-items: center;
+}
+
+.meet__numero{
+    font-size: 2rem;
+    color: var(--moradito);
+}
+
+.meet__texto{
+    font-size: 2rem;
+    padding-left: 15px;
+    color: var(--blanco);
+}
+
+.descripcion{
+    margin-top: 55px;
+    width: 90%;
+}
+
+.descripcion__text{
+    font-size: 2rem;
+    color: var(--moradito);
+}
+
+.descripcion__titulo{
+    margin-top: 15px;
+    color: var(--blanco);
+    font-size: 3.6rem;
+}
+
+.descripcion__parrafo{
+    width: 400px;
+    color: var(--blanco);
+    font-size: 1.8rem;
+}
+
+.botones{
+    margin-top: 80px;
+}
+
+.boton{
+    width: 10px;
+    height: 10px;
+    margin-right: 20px;
+    border-radius: 100%;
+    background-color: var(--moradito);
+    opacity: 0.5;
+    cursor: pointer;
+}
+.activo{
+    background-color: #fff;
+    opacity: 1;
+}
+
+.imagen{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen__nasa{
+    width: 100%;
+}
+
+
