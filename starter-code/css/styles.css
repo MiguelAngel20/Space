@@ -11,6 +11,7 @@
     --blanco: #FFFFFF;
     --gris: #28292b;
 }
+
 html{
     font-size: 62.5%;
     box-sizing: border-box;
@@ -296,9 +297,13 @@ a:visited {
 }
 
 /** Contenido */
+
+img{
+    overflow: hidden;
+}
 .contenedor{
     width: 1100px;
-    margin: auto;
+    margin: 40px auto;
     display: flex;
 }
 
